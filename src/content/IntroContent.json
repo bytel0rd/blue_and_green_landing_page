@@ -1,13 +1,13 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Modern Cities for Millenials & GenZ",
+  "text": "A community of like-minded individuals in cities that blend urban excitement with modern amenities, perfect for young professionals and entrepreneurs.",
   "button": [
     {
       "title": "Explore"
     },
     {
-      "title": "Learn more",
-      "color": "#fff"
+      "title": "Our Story",
+      "color": "black"
     }
   ]
 }
