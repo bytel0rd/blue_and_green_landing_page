@@ -75,7 +75,9 @@ const Footer = ({ t }: { t: TFunction }) => {
               <Large onClick={() => {
 scrollTo("about");
               }} to="#">{t("Mission")}</Large>
-              <Large to="/">{t("Blog")}</Large>
+              <Large to="" onClick={() => {
+                window.open("https://blueandgreeninstitute.substack.com/", "_blank");
+              }}> {t("Blog")}</Large>
               {/* <Large to="/">{t("Press")}</Large> */}
               {/* <Large to="/">{t("Careers & Culture")}</Large> */}
             </Col>
