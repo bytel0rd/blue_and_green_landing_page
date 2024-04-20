@@ -56,6 +56,7 @@ const ContentBlock = ({
                       (
                         item: {
                           color?: string;
+                          link?: string;
                           title: string;
                         },
                         id: number
@@ -64,7 +65,13 @@ const ContentBlock = ({
                           <Button
                             key={id}
                             color={item.color}
-                            onClick={() => scrollTo("about")}
+                            onClick={() => {
+                              if (item.link) {
+                                (window as any).open(item.link, '_blank').focus();
+                                return;  
+                              }
+                              scrollTo("about");
+                            }}
                           >
                             {t(item.title)}
                           </Button>
